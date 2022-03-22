@@ -20,6 +20,8 @@ double power(double x)//derivative of power function
 			y2=pow(x+dx,exp);
 			y3=pow(x-2*dx,exp);
 			y4=pow(x+2*dx,exp);
+			/// calculate derivative from definition using
+			/// stepsize of 2*dx 
 			der2=(y4-y3)/(4*dx);
 			der1=(y2-y1)/(2*dx);
 			if(fabs(der1-der2)<=1e-6)//compare derivative1 and derivateive2 to ensure the accurence has been reduced to 1e-6

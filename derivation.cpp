@@ -23,6 +23,7 @@ double power(double x)//derivative of power function
 			/// calculate derivative from definition using
 			/// stepsize of 2*dx 
 			der2=(y4-y3)/(4*dx);
+			/// as above but with stepsize of dx 
 			der1=(y2-y1)/(2*dx);
 			if(fabs(der1-der2)<=1e-6)//compare derivative1 and derivateive2 to ensure the accurence has been reduced to 1e-6
 			{
